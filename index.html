@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
   <title>Cookie clicker</title>
-  <body>
+  <body onload="updateCookieCount()">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -33,14 +33,12 @@
       <main class="mdl-layout__content">
         <br>
         <br>
-        <img src="./images/images.png" align="center" alt="Cookie monster" onclick= "myButtonClicked()" />
+        <img src="./images/unnamed.png" align="center" alt="Cookie monster" onclick= "myButtonClicked()" />
         <!-- basic text -->
         <p></p>
             <br>
         <div id="answer"></div>
       </main>
     </div>
-  </body>
-  <body onload="updateCookieCount()">
   </body>
 </html>

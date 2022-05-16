@@ -17,11 +17,11 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  if (localStorage.cookieClicker) {
-    localStorage.cookieClicker = (localStorage.cookieClicker) + 1;
+  if (localStorage.updateCookieCount) {
+    localStorage.updateCookieCount = Number(localStorage.updateCookieCount) + 1;
   } else {
-    localStorage.cookieClicker = +1;
+    localStorage.updateCookieCount = + 1;
   }
   document.getElementById("answer").innerHTML =
-    "Total hits : " + localStorage.cookieClicker;
+    "Total hits : " + localStorage.updateCookieCount;
 }
