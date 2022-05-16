@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked() {
   if (localStorage.cookieClicker) {
-    localStorage.cookieClicker = Number(localStorage.cookieClicker) + 1;
+    localStorage.cookieClicker = (localStorage.cookieClicker) + 1;
   } else {
     localStorage.cookieClicker = +1;
   }
