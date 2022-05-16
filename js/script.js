@@ -23,5 +23,5 @@ function myButtonClicked() {
     localStorage.updateCookieCount = +1;
   }
   document.getElementById("answer").innerHTML =
-    "Total hits : " + localStorage.updateCookieCount;
+    "You have clicked the cookie " + localStorage.updateCookieCount + "times"
 }
