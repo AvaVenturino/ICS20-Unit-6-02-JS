@@ -17,12 +17,11 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-
   if (localStorage.cookieClicker) {
-    localStorage.cookieClicker = Number(localStorage.cookieClicker) + 1
+    localStorage.cookieClicker = Number(localStorage.cookieClicker) + 1;
   } else {
     localStorage.cookieClicker = + 1;
   }
   document.getElementById("answer").innerHTML =
-    "Total hits : " + localStorage.cookieClicker
+    "Total hits : " + localStorage.cookieClicker;
 }
